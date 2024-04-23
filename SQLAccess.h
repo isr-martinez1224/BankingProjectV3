@@ -58,23 +58,12 @@ private:
 
 Database::Database()
 {
-    //connect to database
-    /*try
-    {
-        driver = get_driver_instance();
-        con = driver->connect(server, username, password);
-    }
-    catch (sql::SQLException e)
-    {
-        cout << "Could not connect to server. Error message: " << e.what() << endl;
-        system("pause");
-        exit(1);
-    }*/
+    
 }
 
 Database::~Database()
 {
-    //delete con;
+  
 }
 
 
@@ -87,7 +76,6 @@ void Database::AddAccount(string fName, string lName, string accountType, string
         sql::Connection* con;
         sql::Statement* stmt;
         sql::PreparedStatement* pstmt;
-        //sql::ResultSet* res;
 
         driver = get_driver_instance();
         con = driver->connect(server, username, password);
@@ -176,7 +164,6 @@ vector<string> Database::Login(string accType, string uName, string passCode)
         sql::Driver* driver;
         sql::Connection* con;
         sql::Statement* stmt;
-        //sql::PreparedStatement* pstmt;
         sql::ResultSet* res;
 
         driver = get_driver_instance();
@@ -210,7 +197,7 @@ vector<string> Database::Login(string accType, string uName, string passCode)
                     userData.push_back(res->getString("Username"));
                     userData.push_back(res->getString("Password"));
                     userData.push_back(res->getString("AccountNumber"));
-                    userData.push_back(to_string(res->getDouble("AccountBalance")));//check if you can get data as double or only string
+                    userData.push_back(to_string(res->getDouble("AccountBalance")));
                 }
             }
 
@@ -272,7 +259,7 @@ void Database::EditBalance(string fName, string lName, string accNum, double mon
         sql::Connection* con;
         sql::Statement* stmt;
         sql::PreparedStatement* pstmt;
-        //sql::ResultSet* res;
+
 
         driver = get_driver_instance();
         con = driver->connect(server, username, password);
@@ -415,7 +402,6 @@ void Database::DisplayFriendList(string name)
         sql::Driver* driver;
         sql::Connection* con;
         sql::Statement* stmt;
-        //sql::PreparedStatement* pstmt;
         sql::ResultSet* res;
 
         driver = get_driver_instance();
@@ -466,7 +452,6 @@ vector<string> Database::searchFriend(string user, string first, string last, st
         sql::Driver* driver;
         sql::Connection* con;
         sql::Statement* stmt;
-        //sql::PreparedStatement* pstmt;
         sql::ResultSet* res;
 
         driver = get_driver_instance();
@@ -502,7 +487,6 @@ vector<string> Database::searchFriend(string user, string first, string last, st
         }
 
         delete res;
-        //delete pstmt;
         delete stmt;
 
         delete con;
@@ -525,7 +509,6 @@ double Database::verifyFriend(string accNum, string fName, string lName, string 
         sql::Driver* driver;
         sql::Connection* con;
         sql::Statement* stmt;
-        //sql::PreparedStatement* pstmt;
         sql::ResultSet* res;
 
         driver = get_driver_instance();
@@ -582,7 +565,6 @@ double Database::SendMoney(vector<string> myDetails, vector<string> friendDetail
         sql::Connection* con;
         sql::Statement* stmt;
         sql::PreparedStatement* pstmt;
-        //sql::ResultSet* res;
 
         driver = get_driver_instance();
         con = driver->connect(server, username, password);
@@ -688,8 +670,6 @@ double Database::SendMoney(vector<string> myDetails, vector<string> friendDetail
         pstmt = con->prepareStatement("INSERT INTO " + friendDetails.at(1) + friendDetails.at(2) + "Transactions(TransactionType, MoneyInTransaction, DateAndTime) VALUES(? , ? , ? )");
         pstmt->setString(1, recievingText);
         pstmt->setDouble(2, sending);
-        //ct = time(0);
-        //currentTime = ctime(&ct);
         pstmt->setString(3, currentTime);
         pstmt->execute();
 
@@ -718,7 +698,6 @@ void Database::RequestMoney(vector<string> myDetails, vector<string> friendDetai
         sql::Connection* con;
         sql::Statement* stmt;
         sql::PreparedStatement* pstmt;
-        //sql::ResultSet* res;
 
         driver = get_driver_instance();
         con = driver->connect(server, username, password);
@@ -775,7 +754,6 @@ void Database::viewTransactions(string first, string last)
         sql::Driver* driver;
         sql::Connection* con;
         sql::Statement* stmt;
-        //sql::PreparedStatement* pstmt;
         sql::ResultSet* res;
 
         driver = get_driver_instance();
@@ -830,7 +808,6 @@ void Database::DisplayCustomers()
         sql::Driver* driver;
         sql::Connection* con;
         sql::Statement* stmt;
-        //sql::PreparedStatement* pstmt;
         sql::ResultSet* res;
 
         driver = get_driver_instance();
@@ -941,7 +918,6 @@ vector<string> Database::SearchUser(int id, string first, string last)
         sql::Driver* driver;
         sql::Connection* con;
         sql::Statement* stmt;
-        //sql::PreparedStatement* pstmt;
         sql::ResultSet* res;
 
         driver = get_driver_instance();
@@ -978,7 +954,6 @@ vector<string> Database::SearchUser(int id, string first, string last)
 
 
         delete res;
-        //delete pstmt;
         delete stmt;
 
         delete con;

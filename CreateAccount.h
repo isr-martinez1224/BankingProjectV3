@@ -118,7 +118,7 @@ void CreateAccount::CreateUserAccount()
 
 	/*-------------ENTER YOUR EMAIL-------------------*/
 
-	cout << "\nEnter your email address: ";//maybe make a validation
+	cout << "\nEnter your email address: ";
 	cin >> email;
 
 	/*-------------ENTER YOUR PHONE NUMBER-------------------*/
