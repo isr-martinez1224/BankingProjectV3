@@ -941,7 +941,7 @@ vector<string> Database::SearchUser(int id, string first, string last)
             if (to_string(id) == res->getString("USERID") && first == res->getString("FirstName") && last == res->getString("LastName"))
             {
                 found = true;
-                //get the rest of the data
+                //get the rest of the data into vector
                 searchData.push_back(res->getString("FirstName"));
                 searchData.push_back(res->getString("LastName"));
                 searchData.push_back(res->getString("EmailAddress"));
