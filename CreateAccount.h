@@ -209,7 +209,7 @@ void CreateAccount::CreateUserAccount()
 
 
 
-	//write info to database in correct table
+	//write info to database
 	WriteToLoginFile();//fix sign up process , make it different for customer/manager
 
 	cout << "\n--------------------------------" << endl;
