@@ -14,9 +14,9 @@
 using namespace std;
 
 //login sql server info for myself
-const string server = "tcp://127.0.0.1:3306";
-const string username = "root";
-const string password = "sql212#im";
+const string server = "";//address goes here
+const string username = "";//your MySQL username
+const string password = "";//yout MySQL password
 
 //connect to database
 /*
