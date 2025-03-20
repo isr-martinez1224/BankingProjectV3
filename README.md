@@ -250,5 +250,5 @@ This header file includes the SQLAccess class and all importnant functions that 
 ## Ending the program
 Once all users are done using the program, on the main menu, press "0" to quit! A goodbye message will display which lets the user know the program has successfully been terminated.
 <p align="center">
-  <img src="docs/showcase/console_manager8.JPG"/>
+  <img src="docs/showcase/console_menu2.JPG"/>
 </p>
