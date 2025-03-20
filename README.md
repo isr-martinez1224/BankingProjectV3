@@ -173,7 +173,7 @@ The customer can view all transactions that have occured on their account includ
 
 ## Manager.h
 <p align="center">
-  <img src="docs/showcase/console_.JPG"/>
+  <img src="docs/showcase/console_manager1.JPG"/>
 </p>
 
 When the manager successfully logs into their account, they are greeted on the dashboard with their name and available balance. A customer account has 7 possible choices:
@@ -198,5 +198,57 @@ When the manager successfully logs into their account, they are greeted on the d
 ### Display all customers
 When manager chooses this option, all customers who are currently registered in the system will be displayed on the screen. This gives a nice view on what the database looks like.
 <p align="center">
-  <img src="docs/showcase/console_manager.JPG"/>
+  <img src="docs/showcase/console_manager2.JPG"/>
+</p>
+
+
+### Delete customer
+When manager chooses this option, the list of customers will be displayed first. The manager will need to enter the customer's full name and ID number according to the list. The program will implement the same searching method as before and if there is a match, that user is wiped from the system.
+<table>
+    <tr>
+        <th>
+            Entering user information
+            <img src="docs/showcase/console_manager5.JPG"/>
+        </th>
+        <th>
+            SQL View Before Deletion
+            <img src="docs/showcase/console_manager4.JPG"/>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Updated List in console view
+            <img src="docs/showcase/console_manager6.JPG"/>
+        </th>
+        <th>
+            SQL View After Deletion
+            <img src="docs/showcase/console_manager7.JPG"/>
+        </th>
+    </tr>
+</table>
+
+
+### Search for a customer
+When manager chooses this option, the list of customers will be displayed first. The manager will need to enter the customer's full name and ID number according to the list. The program will implement the same searching method as before and if there is a match, more information about the customer's account will be displayed.
+<p align="center">
+  <img src="docs/showcase/console_manager3.JPG"/>
+</p>
+
+
+### Sign Off
+The manager can sign out of their account once they are finished with their tasks. User returns to the main menu and now a new user can log in.
+<p align="center">
+  <img src="docs/showcase/console_manager8.JPG"/>
+</p>
+
+
+## SQLAccess.h
+
+This header file includes the SQLAccess class and all importnant functions that allow Visual Studio 2022 to communicate with MySQL. All the query statements are written inside functions which will read and write information to the database when executed. In order to implement these features, I had to research for tutorials on how to connect VS 2022 to MySQL through plugins and extra configuration. You can see the set-up in the SQLAccess.h  file.
+
+
+## Ending the program
+Once all users are done using the program, on the main menu, press "0" to quit! A goodbye message will display which lets the user know the program has successfully been terminated.
+<p align="center">
+  <img src="docs/showcase/console_manager8.JPG"/>
 </p>
