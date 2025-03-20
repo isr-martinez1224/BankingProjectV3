@@ -126,7 +126,7 @@ The customer can add another customer as a friend in their contact list. They ne
     <tr>
         <th>
             Customer's Contacts in own table
-            <img src="docs/showcase/console_.JPG"/>
+            <img src="docs/showcase/console_customer12.JPG"/>
         </th>
         <th>
         </th>
@@ -168,4 +168,35 @@ The customer can sign out of their account once they are finished with their tas
 The customer can view all transactions that have occured on their account including the date and time which they occurred.
 <p align="center">
   <img src="docs/showcase/console_customer8.JPG"/>
+</p>
+
+
+## Manager.h
+<p align="center">
+  <img src="docs/showcase/console_.JPG"/>
+</p>
+
+When the manager successfully logs into their account, they are greeted on the dashboard with their name and available balance. A customer account has 7 possible choices:
+   
+1. **Display all customers**
+   
+   Manager can see all customers who are registered in the database
+
+2. **Delete Customer**
+
+   Manager can delete a customer account which removes information from the database
+
+3. **Search for a Customer**
+
+   Manager can look for a customer's account in the database in order to pull up more information
+   
+4. **Sign Off**
+   
+   Manager signs out of their account, program returns to main menu
+
+
+### Display all customers
+When manager chooses this option, all customers who are currently registered in the system will be displayed on the screen. This gives a nice view on what the database looks like.
+<p align="center">
+  <img src="docs/showcase/console_manager.JPG"/>
 </p>
