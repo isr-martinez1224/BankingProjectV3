@@ -123,7 +123,49 @@ The customer can add another customer as a friend in their contact list. They ne
             <img src="docs/showcase/console_customer5.JPG"/>
         </th>
     </tr>
+    <tr>
+        <th>
+            Customer's Contacts in own table
+            <img src="docs/showcase/console_.JPG"/>
+        </th>
+        <th>
+        </th>
+    </tr>
 </table>
 
 
 ### Send Money
+The customer can send a friend money. Their contact list will display on the screen and the customer will use that information to specify who to send money to. If that person exists in the list AND is still a user in the datatbase, then money will be properly transferred. Funds are properply updated in th main database and will be reflected on both accounts.
+<p align="center">
+  <img src="docs/showcase/console_customer6.JPG"/>
+</p>
+
+
+### Request Money
+The customer can request money from a friend. Their contact list will display on the screen and the customer will use that information to specify who to request money from. If that person exists in the list AND is still a user in the datatbase, then the request is updated on the friend's contact list. The amount requested is displayed and will be updated as the user sends money to the recipiant. Funds are properply updated in th main database and will be reflected on both accounts.
+<table>
+    <tr>
+        <th>
+            Requesting Money as Justin
+            <img src="docs/showcase/console_customer7.JPG"/>
+        </th>
+        <th>
+            Updated Request from Cory's view
+            <img src="docs/showcase/console_customer11.JPG"/>
+        </th>
+    </tr>
+</table>
+
+
+### Sign Off
+The customer can sign out of their account once they are finished with their tasks. User returns to the main menu and now a new user can log in.
+<p align="center">
+  <img src="docs/showcase/console_customer9.JPG"/>
+</p>
+
+
+### View Recent Transactions
+The customer can view all transactions that have occured on their account including the date and time which they occurred.
+<p align="center">
+  <img src="docs/showcase/console_customer8.JPG"/>
+</p>
