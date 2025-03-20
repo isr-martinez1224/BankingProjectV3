@@ -62,7 +62,7 @@ The user will then be redirected to their respective dashboard according to thei
 
 ## Customer.h
 <p align="center">
-  <img src="docs/showcase/console_.JPG"/>
+  <img src="docs/showcase/console_customer1.JPG"/>
 </p>
 
 When the customer successfully logs into their account, they are greeted on the dashboard with their name and available balance. A customer account has 7 possible choices:
@@ -99,15 +99,31 @@ When the customer successfully logs into their account, they are greeted on the 
 ### Deposit Money
 The customer is first presented with their current balance. Then they are asked to enter how much money they would like to deposit and must enter a valid monetary amount. The balance is updated on the screen and in the database.
 <p align="center">
-  <img src="docs/showcase/console_.JPG"/>
+  <img src="docs/showcase/console_customer2.JPG"/>
 </p>
 
 
 ### Withdraw Money
 The customer is first presented with their current balance. Then they are asked to enter how much money they would like to withdraw and must enter a valid monetary amount. They must also enter an amount that does not exceed their available funds or else they will be asked to try again. The balance is updated on the screen and in the database.
 <p align="center">
-  <img src="docs/showcase/console_.JPG"/>
+  <img src="docs/showcase/console_customer3.JPG"/>
 </p>
 
 
-### 
+### Add a Friend
+The customer can add another customer as a friend in their contact list. They need to fill out the information requested and the program will check if that person exists in the database. If they do, then that person's basic information is added to the customer's contact list, in this case they have their own small database of contacts.
+<table>
+    <tr>
+        <th>
+            Adding a friend
+            <img src="docs/showcase/console_customer4.JPG"/>
+        </th>
+        <th>
+            Friend is an existing user
+            <img src="docs/showcase/console_customer5.JPG"/>
+        </th>
+    </tr>
+</table>
+
+
+### Send Money
