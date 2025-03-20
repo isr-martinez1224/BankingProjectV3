@@ -97,3 +97,17 @@ When the customer successfully logs into their account, they are greeted on the 
 
 
 ### Deposit Money
+The customer is first presented with their current balance. Then they are asked to enter how much money they would like to deposit and must enter a valid monetary amount. The balance is updated on the screen and in the database.
+<p align="center">
+  <img src="docs/showcase/console_.JPG"/>
+</p>
+
+
+### Withdraw Money
+The customer is first presented with their current balance. Then they are asked to enter how much money they would like to withdraw and must enter a valid monetary amount. They must also enter an amount that does not exceed their available funds or else they will be asked to try again. The balance is updated on the screen and in the database.
+<p align="center">
+  <img src="docs/showcase/console_.JPG"/>
+</p>
+
+
+### 
