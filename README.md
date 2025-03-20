@@ -55,3 +55,4 @@ The user will then be redirected to their respective dashboard according to thei
   [<img src="docs/showcase/console_.JPG"/>]
 </p>
 
+When the customer successfully logs into their account, they are greeted on the dashboard with their name and 
