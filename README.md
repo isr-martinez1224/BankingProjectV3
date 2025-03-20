@@ -52,7 +52,7 @@ That is the end of the sign up process and then the program will write all the i
 
 ## UserLogin.h
 <p align="center">
-  <img src="docs/showcase/console_.JPG"/>
+  <img src="docs/showcase/console_login.JPG"/>
 </p>
 
 Login operations are a part of the CreateAccount class and also interacts with the Database class which contains access to the MySQL databases. Customer and Manager classes are also involved in order to provide the correct functions based on the account type. First the user needs to enter what account type they are trying to log into (customer/manager). Next, the user needs to enter their username and password. The program will send this entered information into a function called <ins>**CheckUserType**</ins>. The Database class will then access the MySQL databases and search for the user infomation using queries that the entered information will help build and other predetermined queries. If the user is a customer, the program will search in the Customer database and if the user is a manager, then the program will search in the Manager database instead. The program will go row by row to find the matching login credentials and if a match is found, all of the important information of the row will be pushed onto a vector. The vector is then checked to see if it is empty or not empty. If it is empty, that means matching information was not found and therefore the login is invalid, the user must try again. Otherwise, the vector contains matching user information and the login attempt was successful.
@@ -65,4 +65,35 @@ The user will then be redirected to their respective dashboard according to thei
   <img src="docs/showcase/console_.JPG"/>
 </p>
 
-When the customer successfully logs into their account, they are greeted on the dashboard with their name and 
+When the customer successfully logs into their account, they are greeted on the dashboard with their name and available balance. A customer account has 7 possible choices:
+
+0. **View Recent Transactions**
+
+   Customer can see all recent transactions made on their account
+   
+1. **Deposit Money**
+   
+   Customer can add money to their account
+
+2. **Withdraw Money**
+
+   Customer can take money out of their account
+
+3. **Add a Friend**
+
+   Customer can add another customer user as a friend in their contact list
+   
+4. **Send Money**
+   
+   Customer can send money to a friend in their contact list
+
+5. **Request Money**
+
+   Customer can request to recieve money from a friend in their contact list
+
+6. **Sign Off**
+
+   Customer signs out of their account, program returns to main menu
+
+
+### Deposit Money
